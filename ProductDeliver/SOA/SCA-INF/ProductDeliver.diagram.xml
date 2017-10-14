@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dgm:gDiagram xmlns:dgm="http://xmlns.oracle.com/sca/soadgm">
+    <dgm:gService name="ProductDeliver">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="111" width="137" height="84">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="104" width="156" height="98">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="ProductDeliver" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://mykt.com/sca/soapservice/ProductDeliver1/ProductDeliver/ProductDeliver/v1#wsdl.interface(execute_ptt)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>execute</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gComponent name="Routing1">
+        <dgm:body borderWidth="2" arcRad="20" X="412" Y="96" width="130" height="111">
+            <dgm:borderColor r="128" g="92" b="148"/>
+            <dgm:lightBgColor r="208" g="169" b="227"/>
+            <dgm:darkBgColor r="183" g="132" b="212"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="402" Y="89" width="150" height="127">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="Routing1" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://mykt.com/sca/soapservice/ProductDeliver1/ProductDeliver/ProductDeliver/v1#wsdl.interface(execute_ptt)"/>
+        <dgm:outputPort name="DLF.DLF" X="120" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://mykt.oracle.com/ProductDeliver1/ProductDeliver/DLF#wsdl.interface(DLF)"/>
+        <dgm:outputPort name="Emirates.Emirates" X="120" Y="40" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://mykt.oracle.com/ProductDeliver1/ProductDeliver/Emirates#wsdl.interface(Emirates)"/>
+        <dgm:outputPort name="FedEx.FedEx" X="120" Y="65" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ProductDeliver1/ProductDeliver/FedEx#wsdl.interface(FedEx)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/mediator/resource/image/mediator_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="DLF">
+        <dgm:body borderWidth="2" arcRad="20" X="796" Y="26" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="786" Y="19" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="DLF" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://mykt.oracle.com/ProductDeliver1/ProductDeliver/DLF#wsdl.interface(DLF)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="Emirates">
+        <dgm:body borderWidth="2" arcRad="20" X="796" Y="121" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="786" Y="114" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="Emirates" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://mykt.oracle.com/ProductDeliver1/ProductDeliver/Emirates#wsdl.interface(Emirates)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="FedEx">
+        <dgm:body borderWidth="2" arcRad="20" X="796" Y="216" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="786" Y="209" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="FedEx" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ProductDeliver1/ProductDeliver/FedEx#wsdl.interface(FedEx)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gWireLink source="ProductDeliver" target="Routing1/Routing1" width="2">
+        <dgm:gSegment X1="168" Y1="121" X2="402" Y2="121"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="Routing1/DLF.DLF" target="DLF/DLF" width="2">
+        <dgm:gSegment X1="552" Y1="121" X2="576" Y2="121"/>
+        <dgm:gSegment X1="576" Y1="121" X2="576" Y2="51"/>
+        <dgm:gSegment X1="576" Y1="51" X2="786" Y2="51"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="Routing1/Emirates.Emirates" target="Emirates/Emirates" width="2">
+        <dgm:gSegment X1="552" Y1="146" X2="786" Y2="146"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="Routing1/FedEx.FedEx" target="FedEx/FedEx" width="2">
+        <dgm:gSegment X1="552" Y1="171" X2="576" Y2="171"/>
+        <dgm:gSegment X1="576" Y1="171" X2="576" Y2="241"/>
+        <dgm:gSegment X1="576" Y1="241" X2="786" Y2="241"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+</dgm:gDiagram>
